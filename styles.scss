@@ -23,3 +23,10 @@ $code-color: $purple; // inline code text color
 
 // Code blocks
 $code-block-bg: $cream; // code block background color 
+
+/*-- scss:rules --*/
+/* Prevent RTL from reversing navbar layout */
+.navbar .container-fluid {
+  direction: ltr;
+}
+

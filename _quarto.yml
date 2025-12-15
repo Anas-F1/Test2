@@ -12,12 +12,12 @@ website:
     logo: logo.png
     logo-alt: "شعار رؤية للاستشارات"
     right:
-      - href: index.qmd
-        text: الرئيسية
-      - href: about.qmd
-        text: من نحن
       - href: our-work.qmd
         text: أعمالنا
+      - href: about.qmd
+        text: من نحن
+      - href: index.qmd
+        text: الرئيسية
   page-footer: 
     background: light
     center: "Copyright 2025, Roya Consultancy"      
