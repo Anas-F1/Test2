@@ -14,7 +14,7 @@ about:
   links:
     - icon: envelope
       text: Email
-      href: anas@gmail.com
+      href: anas.fahad@gmail.com
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com
