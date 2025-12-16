@@ -6,7 +6,7 @@ resources:
 lang: ar
 dir: rtl
 website:
-  title: "Test2"
+  title: ""
   search: false
   favicon: logo.png
   navbar:
@@ -14,10 +14,10 @@ website:
     logo: logo.png
     logo-alt: "شعار رؤية للاستشارات"
     right:
-      - href: our-work.qmd
-        text: أعمالنا
       - href: about.qmd
         text: من نحن
+      - href: our-work.qmd
+        text: أعمالنا
       - href: index.qmd
         text: الرئيسية
   page-footer: 
