@@ -10,6 +10,7 @@ website:
   search: false
   favicon: logo.png
   navbar:
+    sort: false
     title: false
     logo: logo.png
     logo-alt: "شعار رؤية للاستشارات"
