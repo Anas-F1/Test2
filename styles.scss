@@ -34,7 +34,6 @@ body {
 }
 .title {
   font-size: 100px;
-  text-align: right;
   margin-right: 1.25em; 
   background: linear-gradient(to left, #2563eb, #9333ea, #4f46e5);
   -webkit-background-clip: text;
@@ -66,4 +65,16 @@ p {
     min-height: 3.4em;
     color: #64748b;
     text-align: center;
+}
+/* تحسين للجوال */
+@media (max-width: 600px) {
+  .title-block-content {
+    padding-top: 60px;   // تقليل المسافة العلوية
+    padding-bottom: 60px; // تقليل المسافة السفلية
+    padding-left: 15px;   // مسافة جانبية أقل
+    padding-right: 15px;
+    justify-content: right; // محاذاة وسط عمودي
+    align-items: right;     // محاذاة وسط أفقي
+    text-align: right;      // عنوان يظهر في المنتصف
+  }
 }
