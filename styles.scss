@@ -69,14 +69,21 @@ p {
 /* تحسين للجوال */
 @media (max-width: 430px) {
   .title-block-content {
-    padding-top: 60px;   // تقليل المسافة العلوية
-    padding-bottom: 60px; // تقليل المسافة السفلية
-    padding-left: 15px;   // مسافة جانبية أقل
-    padding-right: 15px;
-    justify-content: right; // محاذاة وسط عمودي
-    align-items: right;     // محاذاة وسط أفقي
-    text-align: right;      // عنوان يظهر في المنتصف
-    font-size: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+    .title {
+      font-size: 4rem; // أو أي حجم مناسب للجوال
+      margin-right: 0;
+    }
+
+    .subtitle {
+      font-size: 2rem; // مناسب للجوال
+      text-align: center;
+      margin-right: 0;
+    }
   }
 }
