@@ -41,9 +41,15 @@ body {
 }
 .subtitle{
     font-size: 40px;
-    text-align: right;
     margin-right: 3.2em;
 }
+.hero-text {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-right: 7em;
+  color: #64748b;
+}
+
 p.subtitle {
     margin-top: 0em;
     margin-bottom: 0.5em;
@@ -60,6 +66,9 @@ p {
   color: #334155;
 }
 
+div.quarto-about-jolla {
+    margin-top: 1%;
+}
 .nav-footer p {
     font-size: 15px !important;
     min-height: 3.4em;
@@ -86,6 +95,14 @@ p {
       text-align: center;
       margin-right: 0;
     }
+    .hero-text {
+      font-size: 18px;
+      line-height: 1.7;
+      text-align: center;
+      color: #64748b;
+      margin-right: 1em;
+      margin-left: 1em;
+}
   }
   .navbar-nav {
     flex-direction: column-reverse;
