@@ -15,10 +15,10 @@ website:
     logo: logo.png
     logo-alt: "شعار رؤية للاستشارات"
     right:
+      - href: "#services"
+        text: خدماتنا
       - href: "#about"
         text: من نحن
-      - href: our-work.qmd
-        text: أعمالنا
       - href: index.qmd
         text: الرئيسية
   page-footer: 
@@ -27,13 +27,11 @@ website:
   
 format:
   html:
-    
     theme: 
     - cosmos
     - styles.scss
     mainfont: Amiri
     page-layout: full
-
 
 editor: visual
 
