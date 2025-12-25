@@ -19,11 +19,13 @@ website:
         text: خدماتنا
       - href: "#about"
         text: من نحن
+      - href: "#"
+        text: المدونة
       - href: index.qmd
         text: الرئيسية
-  page-footer: 
-    background: light
-    center: "Copyright 2025, Roya Consultancy"      
+  # page-footer: 
+  #   background: light
+  #   center: "Copyright 2025, Roya Consultancy"  
   
 format:
   html:

@@ -45,6 +45,13 @@ $code-block-bg: $cream; // code block background color
 body {
   font-family: "The Year of Handicrafts";
   background-color: #eff6ff;
+  margin-bottom: 0;
+
+}
+/* إزالة الفراغ الأبيض أسفل الصفحة */
+main.content {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 .title {
   font-size: 100px;
@@ -83,6 +90,10 @@ p {
 div.quarto-about-jolla {
     margin-top: 1%;
 }
+.nav-footer {
+  margin-top: -4.5rem;
+  background:rgba(136,136,136,.09); 
+}
 .nav-footer p {
     font-size: 15px !important;
     min-height: 3.4em;
@@ -112,6 +123,8 @@ div.quarto-about-jolla {
   text-decoration: none;
   box-shadow: 0 10px 24px rgba(0,0,0,0.25);
   margin-right: 7em; 
+  position: relative;
+  z-index: 10;
 }
 
 #title-block-header {
@@ -140,11 +153,17 @@ div.quarto-about-jolla {
     
 }
 .section-alt p {
-  color: #334155;
+  color: rgba(51, 65, 85, 1); /*  #334155 */
   font-size: 20px;
   margin-right: 6em;
   margin-left: 6em;
 }
+
+.section-alt p strong {
+  color: black;
+  font-weight: 600;
+}
+
 .intro-quote {
   position: relative;
   padding-left: 3.5rem;
@@ -195,8 +214,78 @@ html {
   border-radius: 16px;
   padding: 2rem;
   margin-left: 2rem;
+  
 }
 
+.contact-section.full-width-section {
+  position: absolute;     
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  background: rgba(136,136,136,.09);
+  padding: 60px 20px;
+  text-align: right;
+  box-sizing: border-box;
+  margin-top: 5rem;
+  }
+
+.contact-section {
+  width: 100% ;              /* العرض الكامل */
+  background: rgba(136,136,136,.09);
+  text-align: right;        /* محاذاة النصوص للجهة اليمنى */
+  
+
+}
+/* القسم الرئيسي للتواصل */
+.contact-section h3 {
+  margin-top: 3rem;
+  text-align: right;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to left, #2563eb, #4f46e5);
+  -webkit-background-clip: text;
+  color: transparent;  
+  margin-right: 5rem;
+
+}
+
+/* كل سطر (أيقونة + نص) */
+.contact-row {
+  display: flex;
+  gap: 0.5rem;   
+  margin-bottom: 0.5rem; /* المسافة بين الأيقونة والنص */
+  margin-right: 5rem;
+  
+}
+
+/* الأيقونات */
+.contact-row i {
+  font-size: 20px;
+  color: #334155;
+  line-height: 0.8;         /* يقلل ارتفاع الخط الافتراضي للأيقونة */
+
+}
+
+/* النصوص (الإيميل ورقم الهاتف) */
+.contact-row a,
+.contact-row .phone {
+  font-size: 18px;
+  font-weight: 400;
+  color: #111827;
+  text-decoration: none;
+  line-height: 1.2;       /* يضبط النص مع الأيقونة */
+
+}
+.contact-row .phone {
+  font-family: "sans-serif";
+}
+.contact-copyright {
+  margin-top: 2rem;
+  font-size: 14px;
+  color: #64748b;
+  text-align: center;
+}
 /* تحسين للجوال */
 @media (max-width: 430px) {
   .title-block-content {
